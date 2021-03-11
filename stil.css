@@ -1,0 +1,86 @@
+.navbar-light{background: rgb(223, 255, 165)             
+}
+.nav-item{
+    font-size: 20px;
+}
+#reg{
+    position:absolute;
+    right:10px;
+    font-size: 20px;   
+}
+.card-body{
+    width: 200px;
+}
+.jumbotron{    
+    margin-top:27px;
+    margin-left:10px;
+    background-image: url("home.jpg");  
+    background-size: cover;
+    min-height: 600px;
+}
+#jumbo{
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin-top:2px;
+    margin-left:1px;
+    background-image: url("onama.jpg");  
+    background-size: cover;
+    min-height: 100px;
+}
+#klasa1{
+    font-size: 15px;
+    line-height: 0em;
+    font-style: italic;
+
+}
+#displej{
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+    text-shadow: 0px;
+    font-weight: 0;
+    text-align: center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+
+}
+.lead{    
+        display:inline;
+        background-color: rgba(0, 0, 0, 0.55);
+        color:#fff;
+        font-weight: 350;
+        font-size: 50px;
+        text-align: center;
+}
+.lead1{    
+        display:inline;
+        background-color: rgba(0, 0, 0, 0.55);
+        color:#fff;
+        font-weight: 550;
+        font-size: 65px;
+        text-align: center;
+}
+.lead2{    
+        display:inline;
+        background-color: rgba(0, 0, 0, 0.55);
+        color:#fff;
+        font-weight: 1150;
+        font-size: 225px;
+        text-align: center;
+        
+}
+.display-4{
+    font-weight: 400;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+footer{
+    font-size: 10px;
+}
+
+body{
+    background-color: rgb(231, 237, 253);
+}

@@ -1,0 +1,39 @@
+#container { width: 100%;}
+
+.navbar-light{background: rgb(223, 255, 165)             
+}
+.nav-item{
+    font-size: 20px;
+}
+#reg{
+    position:absolute;
+    right:10px;
+    font-size: 20px;   
+}
+
+#linija {
+    border-left: thick solid #ff0000;
+  }
+
+#kol3{
+    right: 0;
+}
+#kol1{
+    margin-left: 5px
+}
+
+#red1a{
+    margin-left: 150px;
+
+}
+#red2a{
+    margin-left: 150px;
+
+}
+#red3a{
+    margin-left: 150px;
+
+}
+body{
+    background-color: rgb(231, 237, 253);
+}

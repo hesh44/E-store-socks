@@ -1,0 +1,27 @@
+
+.col-6{
+  background-color:rgb(231, 237, 253);
+}
+#a{
+ font-size: 20px;
+}
+.card1{
+	background-image: url("patern1.jpg");
+	background-size: cover;
+}
+
+.card-link{
+	color: rgb(65, 160, 244);
+}
+
+.navbar-light{background: rgb(223, 255, 165)             
+}
+.nav-item{
+    font-size: 20px;
+}
+#reg{
+    position:absolute;
+    right:10px;
+    font-size: 20px;
+    
+}

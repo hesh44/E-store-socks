@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="shop.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"       crossorigin="anonymous">
+
+	    <script type="text/javascript" src="shop.js"></script>
+
+	
+</head>
+<body >
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="logo.png" width="50" height="50" alt="Ne radi slika" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="html.html">Početna <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt\naskontakt.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registracija.html" id="reg" class="btn btn-outline-success my-2 my-sm-0" role="button"
+                            aria-pressed="true">Registracija</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+	
+	<div class="text" id="n1">
+		<h1 style="background: rgb(231, 237, 253); color: rgb(0, 0, 0)" ><i>ODABERITE POL</i></h1>
+	</div>
+	
+	<div class="dropdown" id="dd">
+        <button onclick="myFunction()" class="dropbtn">Izaberite</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#muski">Muški modeli</a>
+			<a id="alert" href="#" onclick="funkcija();return false">Ženski modeli</a>
+        </div>
+	</div>
+	
+	
+	<div class="text" id="n2">
+		<h2 style="background: rgb(231, 237, 253); color: rgb(0, 0, 0); " align="center" >Cena muških modela je 990RSD</h2>
+	</div>
+
+
+	
+	
+	
+
+	<div class="page" id="p1">
+		<div id="muski" class="main_container">
+			<div  class="see_previous"><img src="arrow.png" class="arrow_previous"></div>
+			<div class="see_next"><img src="arrow.png" class="arrow_next"></div>
+			<div class="long_container">
+				<div class="item" id="one"></div>
+				<div class="item" id="two"></div>
+				<div class="item" id="three"></div>
+				<div class="item" id="four"></div>
+				<div class="item" id="five"></div>
+				<div class="item" id="six"></div>
+				<div class="item" id="seven"></div>
+				<div class="item" id="eight"></div>
+				<div class="item" id="nine"></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var window_width    = $(window).width();
+		var main_width      = $(".main_container").width();
+		var long_container  = $(".long_container");
+		var item            = $(".item");
+		var slide_number    = 0;
+
+
+		long_container.css("width" , main_width * 3.05);
+		item.css("width" , long_container.width() / 9);
+
+		$(".see_next").click(function(){
+			if(slide_number < 6){
+				slide_number++
+			
+				if(slide_number == 6){
+					$(".see_next").animate({opacity: 0});
+				} else {
+					$(".see_next").animate({opacity: 1});
+				}
+
+				if(slide_number == 0){
+					$(".see_previous").animate({opacity: 0});
+				} else {
+					$(".see_previous").animate({opacity: 1});
+				}
+
+				var item_width   = $(".item").width();
+				var pixels_moved = item_width * slide_number;
+
+				long_container.animate({
+					marginLeft: -pixels_moved
+				});
+			}
+		});
+
+
+
+
+		$(".see_previous").click(function(){
+			if(slide_number > 0){
+				slide_number--
+			
+				if(slide_number == 0){
+					$(".see_previous").animate({opacity: 0});
+				} else {
+					$(".see_previous").animate({opacity: 1});
+				}
+
+				if(slide_number == 6){
+					$(".see_next").animate({opacity: 0});
+				} else {
+					$(".see_next").animate({opacity: 1});
+				}
+
+				var item_width   = $(".item").width();
+				var pixels_moved = item_width * slide_number;
+
+				long_container.animate({
+					marginLeft: -pixels_moved
+				});
+			}
+		});
+	});
+
+	</script>
+
+
+</body>
+</html>

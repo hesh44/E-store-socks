@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stilregistracija.css" />
+  <script type="text/javascript" src="registracija.js"></script>
+
+  <title id="titl">Blocks Socks Registracija</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="html.html"><img src="logo.png" width="50" height="50" alt="Ne radi slika" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="html.html">Početna <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt\naskontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a href="registracija.html" id="reg" class="btn btn-outline-success my-2 my-sm-0" role="button"
+              aria-pressed="true">Registracija</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        <!--LEVA KOLONA-->
+        <br>
+        <br>
+        <img id="registracijaslika1" src="carape1.jpg" width="300" height="300" alt="Ne radi slika">
+        <img id="registracijaslika2" src="carape2.jpg" width="300" height="300" alt="Ne radi slika">
+        <img id="registracijaslika3" src="carape4.jpg" width="300" height="300" alt="Ne radi slika">
+
+      </div>
+
+      <div class="col-6" align="center">
+        <!--SREDNJA KOLONA-->
+        <br><br>
+        <h1 style="color:rgb(40, 40, 40)">Registracija</h1>
+        <br>
+        <form name="forma">
+
+          <div class="form-group">
+            <label for="inputName">Ime i prezime</label>
+            <input type="text" id="imeprezime" class="form-control col-md-6" placeholder="Unesite ime i prezime">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control col-md-6" id="email" placeholder="Unesite e-mail" required>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword4">Lozinka</label>
+            <input type="password" name="sifra" class="form-control col-md-6" placeholder="Unesite lozinku" required>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword5">Ponovite lozinku</label>
+            <input type="password" name="sifra2"  class="form-control col-md-6" placeholder="Unesite lozinku" required>
+          </div>
+          <div class="form-group">
+            <label for="inputGrad">Grad</label>
+            <input type="text" id="grad" class="form-control col-md-6" placeholder="Unesite ime grada">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Adresa</label>
+            <input type="text" class="form-control  col-md-4" id="adresa" placeholder="Unesite adresu">
+          </div>
+
+          <div class="form-group">
+            <label for="inputPhone">Broj telefona</label>
+            <input type="phone" class="form-control col-md-4" id="broj" name="t" placeholder="Unesite broj telefona" required>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="notifikacije">
+              <label class="form-check-label" for="gridCheck">
+                Pristajem na obaveštenja i notifikacije
+              </label>
+            </div>
+          </div>
+
+          <button onclick="validateEmail(); validateT(); checkPass()" name="submit" type="submit" id="dugmeSredina"
+            class="btn btn-outline-success">Registruj se</button>
+        </form>
+      </div>
+
+      <div class="col">
+        <!--DESNA KOLONA-->
+        <br>
+
+
+
+        <div class="card1" style="width: 18rem;">
+          <div class="card-body"><br>
+            <h5 class="card-title">Posetite nas na društvenim mrežama! </h5>
+            <button class="btn btn-outline-success my-2 my-sm-0" onclick="windowOpen()">Instagram</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" onclick="windowOpen1()">Facebook</button>
+          </div>
+
+        </div>
+        <img id="registracijaslika5" src="carape5.jpg" width="300" height="300" alt="Ne radi slika">
+        <div class="card" style="width: 18rem;">
+
+
+          <div class="card-body">
+            <form class="form-inline my-2 my-lg-0">
+              <p class="card-text"><b>Imate nedoumicu? <br>Najčešća pitanja: </b><br><br> <a href=""> Uputstvo za
+                  poručivanje</a> <br> <a href="">Priručnik za veličine</a> <br> <a href=""> Garancija</a> </p>
+              <input class="form-control mr-sm-2" type="search" placeholder="Unesite pitanje" aria-label="Search">
+              <br>
+              <br>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pretraga</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
